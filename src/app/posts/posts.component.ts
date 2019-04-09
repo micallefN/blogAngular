@@ -7,17 +7,21 @@ import { Component, Input,  OnInit } from '@angular/core';
 })
 export class PostsComponent implements OnInit {
 
-  @Input() post: object;
+  @Input() title: string;
+  @Input() content: string;
+  @Input() loveIts: number;
+  @Input() createdAt: string;
+
   constructor() { }
 
   ngOnInit() {
   }
 
   upLikes(){
-    this.post.loveIts ++;
+    this.loveIts ++;
   }
 
   downLikes(){
-    this.post.loveIts --;
+    this.loveIts --;
   }
 }

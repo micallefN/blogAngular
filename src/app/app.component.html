@@ -2,6 +2,6 @@
 <h1>Posts</h1>
 <div>
   <ul class="list-group">
-    <app-posts *ngFor="let post of posts" [post]="post"></app-posts>
+    <app-posts *ngFor="let post of posts" [title]="post.title" [content]="post.content" [loveIts]="post.loveIts" [createdAt]="post.created_at"></app-posts>
   </ul>
 </div>
